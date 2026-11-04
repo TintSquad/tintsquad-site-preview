@@ -1,0 +1,4 @@
+# PREVIEW: change to "Allow: /" when this replaces the live site
+User-agent: *
+Disallow: /
+Sitemap: https://www.tintsquad.com/sitemap.xml
