@@ -49,3 +49,4 @@ footer{background:#070708;border-top:1px solid var(--line);padding:50px 0 20px;c
 .callout{background:var(--card);border:1px solid var(--red);border-radius:14px;padding:32px;box-shadow:0 20px 50px -20px rgba(225,6,0,.45)}.callout .ticks{color:var(--mut);line-height:2}
 @media(min-width:721px){.hero{align-items:flex-start}.hin{padding-top:72px}}
 .cards.price{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.gift{display:flex;align-items:center;gap:36px}.gift picture{flex:none;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px}.gift img{width:155px;height:92px}@media(max-width:720px){.gift{flex-direction:column;align-items:flex-start;gap:20px}}

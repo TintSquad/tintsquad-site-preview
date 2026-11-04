@@ -75,7 +75,7 @@ home=f'''<section class="hero">{pic("hero","White full-size pickup truck with da
 <p>Most pickups and SUVs leave the factory with dark rear privacy glass and clear front windows. We meter your back glass to see whether our 15% or 20% matches best, then tint your two fronts so the whole truck looks right. It's a quick job, so you can wait in our waiting room.</p>
 <p><a class="btn" href="{BOOK}">Book Two Fronts – $100</a></p></div><div class="callout"><p class="eyebrow">Trucks &amp; SUVs</p><p class="amt">$100</p><h3>Two Fronts</h3><ul class="ticks"><li>We meter your back glass</li><li>15% or 20% to match</li><li>Wait in our waiting room</li><li>LLumar film, lifetime warranty</li></ul></div></div></section>
 {PRICING}
-<section class="sec"><div class="wrap split"><div><p class="eyebrow">Tint simulator</p><h2>See your tint before you book</h2><p>Pick your year, make, model, paint color and shades, and we'll show you an AI preview of your vehicle with tint in about 10 seconds.</p><p><a class="btn" href="/tint-simulator">Try the Tint Simulator</a></p></div>{pic("suv","Dark SUV with tinted windows")}</div></section>
+<section class="sec"><div class="wrap split"><div><p class="eyebrow">Tint simulator</p><h2>See your tint before you book</h2><p>Pick your year, make, model, paint color and shades, and we'll show you an AI preview of your vehicle with tint in about 10 seconds.</p><p><a class="btn" href="/tint-simulator">Try the Tint Simulator</a></p></div>{pic("colorado","Red Chevrolet Colorado pickup truck with dark tinted windows")}</div></section>
 <section class="sec alt"><div class="wrap"><p class="eyebrow">Why Tint Squad</p><h2>One shop. One film. 16 years.</h2><div class="cards why">
 <div class="card"><h3>16 years in Syracuse</h3><p>Same shop on West Genesee Street, standing behind every install.</p></div>
 <div class="card"><h3>LLumar film</h3><p>Dyed automotive film in 5, 15, 20 and 35% shades.</p></div>
@@ -85,6 +85,7 @@ home=f'''<section class="hero">{pic("hero","White full-size pickup truck with da
 {HOW}
 <section class="sec"><div class="wrap split rev">{pic("suv","White full-size SUV with dark tinted windows")}<div><p class="eyebrow">Tint in any season</p><h2>Syracuse glare doesn't wait for summer.</h2><p>Low winter sun off fresh snow is brutal. Tint cuts glare all year, and booking in the off-season beats the summer rush.</p><p><a class="btn ghost" href="/blog">Read the blog</a></p></div></div></section>
 <section class="sec alt"><div class="wrap narrow"><p class="eyebrow">FAQ</p><h2>Quick answers</h2>{faqhtml(FAQS[:5])}<p><a href="/faq">All FAQs →</a></p></div></section>
+<section class="sec alt"><div class="wrap gift"><picture><source type="image/webp" srcset="/img/gift-certificate.webp"><img src="/img/gift-certificate.png" alt="Tint Squad gift certificates" width="155" height="92" loading="lazy" decoding="async"></picture><div><p class="eyebrow">Gift certificates</p><h2>Give the Gift of Tint</h2><p>Tint Squad gift certificates, available at the shop.</p><p><a class="btn" href="{TEL}">Call to Buy</a></p></div></div></section>
 {CONTACT}'''
 page('/','Truck & SUV Window Tint Syracuse NY | Tint Squad','Window tint for pickup trucks and SUVs in Syracuse, NY. Two front windows $100. LLumar film, lifetime warranty, no deposit. Call (315) 418-5442.',home,FAQLD)
 
