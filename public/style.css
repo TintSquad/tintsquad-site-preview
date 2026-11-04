@@ -51,3 +51,4 @@ footer{background:#070708;border-top:1px solid var(--line);padding:50px 0 20px;c
 .cards.price{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
 .gift{display:flex;align-items:center;gap:36px}.gift picture{flex:none;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px}.gift img{width:155px;height:92px}@media(max-width:720px){.gift{flex-direction:column;align-items:flex-start;gap:20px}}
 .simbtns{display:flex;flex-wrap:wrap;gap:10px}.sharemenu{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.eyebrow.special{display:block;font-size:clamp(.95rem,2.2vw,1.15rem);font-weight:900;letter-spacing:.08em;margin-bottom:.4em}

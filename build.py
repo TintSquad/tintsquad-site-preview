@@ -67,8 +67,8 @@ CONTACT=f'''<section class="sec" id="contact"><div class="wrap cgrid"><div><p cl
 <table class="hours"><caption>Hours</caption><tr><th>Tue–Fri</th><td>10:00am – 6:00pm</td></tr><tr><th>Sat, Sun, Mon</th><td>Closed</td></tr></table></div><div class="map">{MAP}</div></div></section>'''
 
 home=f'''<section class="hero">{pic("hero","White full-size pickup truck with dark tinted windows","bg","100vw",False,1600,900)}
-<div class="wrap hin"><p class="eyebrow">Syracuse, NY · 16 years in business</p><h1>Truck &amp; SUV<br>window tint, <em>done right.</em></h1>
-<p class="lead"><b>Special: Two Fronts + Windshield Strip $150</b>. LLumar film, lifetime warranty, no deposit.</p>
+<div class="wrap hin"><p class="eyebrow special">Special: Two Fronts + Windshield Strip $150</p><h1>Truck &amp; SUV<br>window tint, <em>done right.</em></h1>
+<p class="lead">Syracuse, NY · 16 years in business. LLumar film, lifetime warranty, no deposit.</p>
 <div class="ctas"><a class="btn lg" href="{BOOK}">Book or Get a Quote</a><a class="btn ghost lg" href="{TEL}">Call {PH}</a></div>
 <ul class="chips"><li>LLumar film</li><li>Lifetime warranty</li><li>No deposit</li><li>Tue–Fri 10–6</li></ul></div></section>
 <section class="sec"><div class="wrap split"><div><p class="eyebrow">Two Fronts to Match · $100</p><h2>Your rear glass is dark. Your fronts aren't.</h2>
