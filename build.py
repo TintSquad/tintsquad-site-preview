@@ -38,7 +38,7 @@ def pic(name,alt,cls='',sizes='(max-width:800px) 100vw, 50vw',lazy=True,w=1200,h
 PRICING=f'''<section class="sec" id="pricing"><div class="wrap"><p class="eyebrow">Straight pricing</p><h2>Flat prices. No deposit.</h2>
 <div class="cards price">
 <div class="card hot"><span class="tag">Special</span><h3>Two Fronts + Windshield Strip</h3><p class="amt">$150</p><p>Trucks &amp; SUVs: two front windows matched to your rear glass plus a windshield sun strip.</p><a class="btn" href="{BOOK}">Book the Special</a></div>
-<div class="card"><h3>Two Fronts</h3><p class="amt">$100</p><p>Trucks &amp; SUVs: we match your fronts to your factory rear privacy glass. Wait in our waiting room.</p><a class="btn ghost" href="{BOOK}">Book Two Fronts</a></div>
+<div class="card"><h3>Two Fronts</h3><p class="amt">$100</p><p>Trucks &amp; SUVs: fronts matched to your factory rear glass. Wait in our waiting room.</p><a class="btn ghost" href="{BOOK}">Book Two Fronts</a></div>
 <div class="card"><h3>Windshield Strip</h3><p class="amt">$50</p><p>A sun strip across the top of the windshield to cut glare from the sun and the snow.</p><a class="btn ghost" href="{BOOK}">Book a Strip</a></div>
 <div class="card"><h3>Full Windshield</h3><p class="amt">$150</p><p>Full windshield film. Ask us about NY rules before you choose a shade.</p><a class="btn ghost" href="{BOOK}">Book Windshield</a></div>
 <div class="card"><h3>Full Vehicle &amp; Everything Else</h3><p class="amt sm">Quoted by vehicle</p><p>Pickups, SUVs, sunroofs and more. Pick your vehicle on the booking page for a price.</p><a class="btn ghost" href="{BOOK}">Get My Quote</a></div>
@@ -76,12 +76,11 @@ home=f'''<section class="hero">{pic("hero","White full-size pickup truck with da
 <p>Most pickups and SUVs leave the factory with dark rear privacy glass and clear front windows. We meter your back glass to see whether our 15% or 20% matches best, then tint your two fronts so the whole truck looks right. It's a quick job, so you can wait in our waiting room.</p>
 <p><a class="btn" href="{BOOK}">Book Two Fronts – $100</a></p></div><div class="callout"><p class="eyebrow">Trucks &amp; SUVs</p><p class="amt">$100</p><h3>Two Fronts</h3><ul class="ticks"><li>We meter your back glass</li><li>15% or 20% to match</li><li>Wait in our waiting room</li><li>LLumar film, lifetime warranty</li></ul></div></div></section>
 {PRICING}
-<section class="sec"><div class="wrap split"><div><p class="eyebrow">Tint simulator</p><h2>See your tint before you book</h2><p>Pick your year, make, model, paint color and shades, and see an AI preview of your vehicle with tint.</p><p><a class="btn" href="/tint-simulator">Try the Tint Simulator</a></p></div>{pic("colorado","Red Chevrolet Colorado pickup truck with dark tinted windows")}</div></section>
+<section class="sec"><div class="wrap split"><div><p class="eyebrow">Tint simulator</p><h2>See your tint before you book</h2><p>Pick your truck or SUV, color and shades, and see an AI preview before you book.</p><p><a class="btn" href="/tint-simulator">Try the Tint Simulator</a></p></div>{pic("colorado","Red Chevrolet Colorado pickup truck with dark tinted windows")}</div></section>
 <section class="sec alt"><div class="wrap"><p class="eyebrow">Why Tint Squad</p><h2>One shop. One film. 16 years.</h2><div class="cards why">
 <div class="card"><h3>16 years in Syracuse</h3><p>Same shop on West Genesee Street, standing behind every install.</p></div>
 <div class="card"><h3>LLumar film</h3><p>Dyed automotive film in 5, 15, 20 and 35% shades.</p></div>
-<div class="card"><h3>Lifetime warranty</h3><p>Covers manufacturer defects like bubbling, peeling, fading or color change.</p></div>
-<div class="card"><h3>Built for trucks &amp; SUVs</h3><p>Pickups, SUVs and two-front matches are what we do every day.</p></div></div>
+<div class="card"><h3>Lifetime warranty</h3><p>Covers manufacturer defects like bubbling, peeling, fading or color change.</p></div></div>
 <h3 class="mt">Pick your shade</h3>{SHADES}</div></section>
 {HOW}
 <section class="sec"><div class="wrap split rev">{pic("suv","White full-size SUV with dark tinted windows")}<div><p class="eyebrow">Tint in any season</p><h2>Syracuse glare doesn't wait for summer.</h2><p>Low winter sun off fresh snow is brutal. Tint cuts glare all year, and booking in the off-season beats the summer rush.</p><p><a class="btn ghost" href="/blog">Read the blog</a></p></div></div></section>
