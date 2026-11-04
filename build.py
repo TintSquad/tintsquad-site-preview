@@ -18,11 +18,11 @@ def page(path,title,desc,body,extra_ld=None):
 <meta name="theme-color" content="#0b0b0d"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/style.css">
 <link rel="preload" as="image" href="/img/hero-1600.webp" imagesrcset="/img/hero-800.webp 800w, /img/hero-1600.webp 1600w" imagesizes="100vw">
 {lds}</head><body>
-<header class="top"><div class="wrap bar"><a class="logo" href="/">TINT<span>SQUAD</span></a>
+<header class="top"><div class="wrap bar"><a class="logo" href="/" aria-label="Tint Squad home"><img src="/img/logo-white.svg" alt="Tint Squad" width="180" height="33"></a>
 <input type="checkbox" id="m" aria-label="Menu"><label for="m" class="burger" aria-hidden="true"><i></i><i></i><i></i></label>
 <nav>{nav}</nav><div class="hcta"><a class="ph" href="{TEL}">{PH}</a><a class="btn" href="{BOOK}">Book Now</a></div></div></header>
 <main>{body}</main>
-<footer><div class="wrap fgrid"><div><a class="logo" href="/">TINT<span>SQUAD</span></a><p>Automotive window tint in Syracuse, NY for 16 years. Llumar ATC film. Lifetime warranty.</p></div>
+<footer><div class="wrap fgrid"><div><a class="logo" href="/" aria-label="Tint Squad home"><img src="/img/logo-white.svg" alt="Tint Squad" width="180" height="33"></a><p>Automotive window tint in Syracuse, NY for 16 years. Llumar ATC film. Lifetime warranty.</p></div>
 <div><h4>Visit</h4><p>1130 West Genesee Street<br>Syracuse, NY 13204</p><p><a href="{TEL}">{PH}</a></p></div>
 <div><h4>Hours</h4><p>Tue–Fri: 10am–6pm<br>Sat–Mon: Closed</p></div>
 <div><h4>Links</h4><p>{" · ".join(f'<a href="{h}">{t}</a>' for h,t in NAV)}</p><p><a class="btn sm" href="{BOOK}">Book or Get a Quote</a></p></div></div>
