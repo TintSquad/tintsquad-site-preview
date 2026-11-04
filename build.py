@@ -74,6 +74,7 @@ home=f'''<section class="hero">{pic("hero","Black pickup truck with dark tinted 
 <p>Most pickups and SUVs leave the factory with dark rear privacy glass and clear front windows. We meter your back glass to see whether our 15% or 20% matches best, then tint your two fronts so the whole truck looks right. It's a quick job, so you can wait in our waiting room.</p>
 <p><a class="btn" href="{BOOK}">Book the Two Fronts Special – $100</a></p></div><div class="callout"><p class="eyebrow">Trucks &amp; SUVs</p><p class="amt">$100</p><h3>Two Fronts Special</h3><ul class="ticks"><li>We meter your back glass</li><li>15% or 20% to match</li><li>Wait in our waiting room</li><li>LLumar film, lifetime warranty</li></ul></div></div></section>
 {PRICING}
+<section class="sec"><div class="wrap split"><div><p class="eyebrow">Tint simulator</p><h2>See your tint before you book</h2><p>Pick your year, make, model, paint color and shades, and we'll show you an AI preview of your vehicle with tint in about 10 seconds.</p><p><a class="btn" href="/tint-simulator">Try the Tint Simulator</a></p></div>{pic("suv","Dark SUV with tinted windows")}</div></section>
 <section class="sec alt"><div class="wrap"><p class="eyebrow">Why Tint Squad</p><h2>One shop. One film. 16 years.</h2><div class="cards why">
 <div class="card"><h3>16 years in Syracuse</h3><p>Same shop on West Genesee Street, standing behind every install.</p></div>
 <div class="card"><h3>LLumar film</h3><p>Dyed automotive film in 5, 15, 20 and 35% shades.</p></div>
@@ -112,9 +113,20 @@ c=f'<section class="phero"><div class="wrap"><p class="eyebrow">Contact</p><h1>C
 page('/blank','Contact Tint Squad | Window Tint Syracuse NY','Contact Tint Squad, 1130 West Genesee Street, Syracuse, NY 13204. Call (315) 418-5442. Open Tuesday to Friday, 10am to 6pm.',c)
 bk=f'<section class="phero"><div class="wrap"><p class="eyebrow">Book online</p><h1>Book your tint appointment</h1><p class="lead">Pick your vehicle and service, see your price, choose a time. No deposit.</p><a class="btn lg" href="{BOOK}">Open Booking Page</a> <a class="btn ghost lg" href="{TEL}">Call {PH}</a></div></section>{HOW}'
 page('/blank-1','Book a Window Tint Appointment Syracuse NY | Tint Squad','Book your truck or SUV window tint appointment at Tint Squad in Syracuse, NY. LLumar film with a lifetime warranty. No deposit.',bk)
+SIMBODY=f'''<section class="phero"><div class="wrap"><p class="eyebrow">Window tint simulator</p><h1>See your tint before you book</h1><p class="lead">Pick your vehicle, paint color and shades. We'll show you a preview in about 10 seconds.</p></div></section>
+<section class="sec"><div class="wrap"><form id="sim" class="sim" novalidate>
+<fieldset><legend>1. Your vehicle</legend><label>Year<select id="year" required></select></label><label>Make<select id="make" disabled required></select></label><label>Model<select id="model" disabled required></select></label><label id="bodyw" hidden>Body style<select id="body"></select></label><label>Paint color<select id="color" disabled required></select></label></fieldset>
+<fieldset><legend>2. Your shades</legend><label>Front side windows<select id="front"></select></label><label>Rear side windows<select id="rear"></select></label><label>Back glass<select id="back"></select></label><label>Full windshield<select id="full"></select></label><label class="chk"><input type="checkbox" id="strip"> Windshield sun strip (5%)</label></fieldset>
+<fieldset><legend>3. Where should we send your quote?</legend><label>Name<input type="text" id="name" autocomplete="name" required></label><label>Phone<input type="tel" id="phone" autocomplete="tel" required></label><input class="hp" id="website" tabindex="-1" autocomplete="off" aria-hidden="true"></fieldset>
+<p class="err" id="err" role="alert"></p><p><button class="btn lg" id="go" type="submit">Show My Tint</button></p>
+<p class="note">Previews are AI illustrations to help you compare shades. Your real vehicle and film may look different. Check New York's tint rules before choosing front-window shades (<a href="/faq">FAQ</a>).</p></form>
+<div class="simout" id="out" hidden><div class="wait" id="wait"><div class="spin"></div>Creating your preview… <span id="secs">0</span>s</div>
+<div id="res" hidden><img id="img" alt="AI preview of your vehicle with the selected window tint" width="1376" height="768"><p class="note" id="cap"></p><p class="note">AI illustration, not a photo of your vehicle.</p><p><a class="btn lg" href="{BOOK}">Book This Tint</a> <a class="btn ghost lg" href="{TEL}">Call {PH}</a></p></div></div>
+</div></section><script src="/tint-simulator/sim.js" defer></script>'''
+page('/tint-simulator','Window Tint Simulator | See Your Tint | Tint Squad Syracuse NY','Preview window tint on your truck or SUV before you book. Pick your vehicle, color and shades. Tint Squad, Syracuse NY.',SIMBODY)
 page('/404','Page Not Found | Tint Squad','Page not found.',f'<section class="phero"><div class="wrap"><h1>Page not found</h1><p><a class="btn" href="/">Go home</a></p></div></section>')
 os.rename(OUT+'/404/index.html',OUT+'/404.html'); os.rmdir(OUT+'/404')
-paths=['/','/window-tint','/quote','/faq','/blog','/blank','/blank-1']
+paths=['/','/window-tint','/tint-simulator','/quote','/faq','/blog','/blank','/blank-1']
 open(OUT+'/sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join(f'<url><loc>{BASE}{p}</loc><lastmod>2026-11-04</lastmod></url>' for p in paths)+'</urlset>\n')
 # preview: block indexing so it won't compete with live site; flip for production
 open(OUT+'/robots.txt','w').write(f'# PREVIEW: change to "Allow: /" when this replaces the live site\nUser-agent: *\nDisallow: /\nSitemap: {BASE}/sitemap.xml\n')
