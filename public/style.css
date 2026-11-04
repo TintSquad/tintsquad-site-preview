@@ -53,3 +53,4 @@ footer{background:#070708;border-top:1px solid var(--line);padding:50px 0 20px;c
 .simbtns{display:flex;flex-wrap:wrap;gap:10px}.sharemenu{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
 .eyebrow.special{display:block;font-size:clamp(.95rem,2.2vw,1.15rem);font-weight:900;letter-spacing:.08em;margin-bottom:.4em}
 .special-card{display:inline-block;margin:.6rem 0 1.4rem;padding:14px 20px;border:1px solid var(--red);border-left:6px solid var(--red);border-radius:12px;background:rgba(20,20,24,.85);box-shadow:0 14px 40px -18px rgba(225,6,0,.6)}.sc-h{margin:0;color:var(--red2);font-weight:900;text-transform:uppercase;letter-spacing:.1em;font-size:.9rem}.sc-b{margin:.2em 0 0;font-size:clamp(1.1rem,2.6vw,1.45rem);font-weight:800;color:#fff}.sc-b b{color:var(--red2)}
+.hin{width:100%}
