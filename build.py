@@ -5,7 +5,7 @@ LD={"@context":"https://schema.org","@type":["AutoRepair","LocalBusiness"],"name
 "telephone":"+1-315-418-5442","image":BASE+"/img/hero-1600.jpg","priceRange":"$$",
 "address":{"@type":"PostalAddress","streetAddress":"1130 West Genesee Street","addressLocality":"Syracuse","addressRegion":"NY","postalCode":"13204","addressCountry":"US"},
 "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday"],"opens":"10:00","closes":"18:00"}],
-"areaServed":"Syracuse, NY","description":"Automotive window tint for pickup trucks and SUVs in Syracuse, NY. Llumar ATC film, lifetime warranty."}
+"areaServed":"Syracuse, NY","description":"Automotive window tint for pickup trucks and SUVs in Syracuse, NY. LLumar film, lifetime warranty."}
 NAV=[('/','Home'),('/window-tint','Window Tint'),('/quote','Pricing & Quote'),('/faq','FAQ'),('/blog','Blog'),('/blank','Contact')]
 def page(path,title,desc,body,extra_ld=None):
     nav=''.join(f'<a href="{h}"{" aria-current=page" if h==path else ""}>{t}</a>' for h,t in NAV)
@@ -22,7 +22,7 @@ def page(path,title,desc,body,extra_ld=None):
 <input type="checkbox" id="m" aria-label="Menu"><label for="m" class="burger" aria-hidden="true"><i></i><i></i><i></i></label>
 <nav>{nav}</nav><div class="hcta"><a class="ph" href="{TEL}">{PH}</a><a class="btn" href="{BOOK}">Book Now</a></div></div></header>
 <main>{body}</main>
-<footer><div class="wrap fgrid"><div><a class="logo" href="/" aria-label="Tint Squad home"><img src="/img/logo-white.svg" alt="Tint Squad" width="180" height="33"></a><p>Automotive window tint in Syracuse, NY for 16 years. Llumar ATC film. Lifetime warranty.</p></div>
+<footer><div class="wrap fgrid"><div><a class="logo" href="/" aria-label="Tint Squad home"><img src="/img/logo-white.svg" alt="Tint Squad" width="180" height="33"></a><p>Automotive window tint in Syracuse, NY for 16 years. LLumar film. Lifetime warranty.</p></div>
 <div><h4>Visit</h4><p>1130 West Genesee Street<br>Syracuse, NY 13204</p><p><a href="{TEL}">{PH}</a></p></div>
 <div><h4>Hours</h4><p>Tue–Fri: 10am–6pm<br>Sat–Mon: Closed</p></div>
 <div><h4>Links</h4><p>{" · ".join(f'<a href="{h}">{t}</a>' for h,t in NAV)}</p><p><a class="btn sm" href="{BOOK}">Book or Get a Quote</a></p></div></div>
@@ -37,17 +37,17 @@ def pic(name,alt,cls='',sizes='(max-width:800px) 100vw, 50vw',lazy=True,w=1200,h
 
 PRICING=f'''<section class="sec" id="pricing"><div class="wrap"><p class="eyebrow">Straight pricing</p><h2>Flat prices. No deposit.</h2>
 <div class="cards price">
-<div class="card hot"><span class="tag">Most popular</span><h3>Two Front Windows</h3><p class="amt">$100</p><p>Match your fronts to your truck or SUV's factory rear privacy glass. Wait in our waiting room.</p><a class="btn" href="{BOOK}">Book Two Fronts</a></div>
+<div class="card hot"><span class="tag">Special</span><h3>Two Fronts Special</h3><p class="amt">$100</p><p>Trucks &amp; SUVs: we match your fronts to your factory rear privacy glass. Wait in our waiting room.</p><a class="btn" href="{BOOK}">Book Two Fronts</a></div>
 <div class="card"><h3>Windshield Strip</h3><p class="amt">$50</p><p>A sun strip across the top of the windshield to cut glare from the sun and the snow.</p><a class="btn ghost" href="{BOOK}">Book a Strip</a></div>
 <div class="card"><h3>Full Windshield</h3><p class="amt">$150</p><p>Full windshield film. Ask us about NY rules before you choose a shade.</p><a class="btn ghost" href="{BOOK}">Book Windshield</a></div>
 <div class="card"><h3>Full Vehicle &amp; Everything Else</h3><p class="amt sm">Quoted by vehicle</p><p>Pickups, SUVs, sunroofs and more. Pick your vehicle on the booking page for a price.</p><a class="btn ghost" href="{BOOK}">Get My Quote</a></div>
-</div><p class="note">Every job uses Llumar ATC film and comes with a lifetime warranty. Shade choice doesn't change the price.</p></div></section>'''
+</div><p class="note">Every job uses LLumar film and comes with a lifetime warranty. Shade choice doesn't change the price.</p></div></section>'''
 SHADES='''<div class="shades" role="list"><div role="listitem" style="--o:.92"><b>5%</b><span>Limo dark</span></div><div role="listitem" style="--o:.8"><b>15%</b><span>Very dark</span></div><div role="listitem" style="--o:.7"><b>20%</b><span>Dark</span></div><div role="listitem" style="--o:.5"><b>35%</b><span>Medium</span></div></div>'''
 FAQS=[
 ("Can I roll my windows down after tint?","Leave your windows rolled up for at least 48 hours after the film is installed so it can set."),
 ("What are the tint laws in New York?","For most passenger vehicles, New York requires front side windows to let in at least 70% of light, and the windshield can only have non-reflective tint on the top 6 inches. On SUVs, pickup trucks and vans, the rear side windows and rear window can be darker; on sedans, the rear side windows also have to meet the 70% rule. Limited medical exemptions exist. Laws change, so check the NY DMV for the current rules before choosing a shade, and ask us if you have questions."),
-("What film do you use?","Llumar ATC, a dyed automotive film, in 5%, 15%, 20% and 35%. It's backed by a lifetime warranty against manufacturer defects like bubbling, peeling, fading or color change."),
-("Why don't you carry ceramic tint?","We've built our shop around one film we trust and stand behind: Llumar ATC. Ceramic is a different, higher-priced product line that we simply don't offer. If ceramic is a must-have for you, another shop may be a better fit."),
+("What film do you use?","LLumar, a dyed automotive film, in 5%, 15%, 20% and 35%. It's backed by a lifetime warranty against manufacturer defects like bubbling, peeling, fading or color change."),
+("Why don't you carry ceramic tint?","We've built our shop around one film we trust and stand behind: LLumar. Ceramic is a different, higher-priced product line that we simply don't offer. If ceramic is a must-have for you, another shop may be a better fit."),
 ("Does the shade percentage affect the price?","No. Your shade choice doesn't change the price."),
 ("How long does it take?","Two front windows are a quick job and you can wait in our waiting room. For a full vehicle, plan to drop it off for about 3 hours."),
 ("Do I need a deposit?","No deposit. Book online and show up."),
@@ -59,7 +59,7 @@ FAQLD={"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":
 HOW=f'''<section class="sec alt"><div class="wrap"><p class="eyebrow">How it works</p><h2>Three steps. Done.</h2><ol class="steps">
 <li><b>Book online</b><span>Pick your vehicle and service on our <a href="{BOOK}">booking page</a> and get your price. No deposit.</span></li>
 <li><b>Come in</b><span>Two fronts? Hang out in the waiting room. Full vehicle? Drop it off; plan on about 3 hours.</span></li>
-<li><b>Drive off tinted</b><span>Keep the windows up for 48 hours. Your Llumar film is covered by a lifetime warranty.</span></li></ol></div></section>'''
+<li><b>Drive off tinted</b><span>Keep the windows up for 48 hours. Your LLumar film is covered by a lifetime warranty.</span></li></ol></div></section>'''
 MAP='<iframe title="Map to Tint Squad, 1130 West Genesee Street, Syracuse NY" src="https://www.google.com/maps?q=1130+West+Genesee+Street,+Syracuse,+NY+13204&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
 CONTACT=f'''<section class="sec" id="contact"><div class="wrap cgrid"><div><p class="eyebrow">Visit the shop</p><h2>Tint Squad, Syracuse</h2>
 <p class="big">1130 West Genesee Street<br>Syracuse, NY 13204</p><p><a class="btn" href="{TEL}">Call {PH}</a> <a class="btn ghost" href="{BOOK}">Book Online</a></p>
@@ -67,16 +67,16 @@ CONTACT=f'''<section class="sec" id="contact"><div class="wrap cgrid"><div><p cl
 
 home=f'''<section class="hero">{pic("hero","Black pickup truck with dark tinted windows parked outside the Tint Squad shop bay at night","bg","100vw",False,1600,900)}
 <div class="wrap hin"><p class="eyebrow">Syracuse, NY · 16 years in business</p><h1>Truck &amp; SUV<br>window tint, <em>done right.</em></h1>
-<p class="lead">Two front windows just <b>$100</b>. Llumar ATC film, lifetime warranty, no deposit.</p>
+<p class="lead"><b>Two Fronts Special: $100</b>. LLumar film, lifetime warranty, no deposit.</p>
 <div class="ctas"><a class="btn lg" href="{BOOK}">Book or Get a Quote</a><a class="btn ghost lg" href="{TEL}">Call {PH}</a></div>
-<ul class="chips"><li>Llumar ATC film</li><li>Lifetime warranty</li><li>No deposit</li><li>Tue–Fri 10–6</li></ul></div></section>
-<section class="sec"><div class="wrap split"><div><p class="eyebrow">The two-fronts fix</p><h2>Your rear glass is dark. Your fronts aren't.</h2>
-<p>Most pickups and SUVs leave the factory with dark rear privacy glass and clear front windows. It looks unfinished. We match the fronts so the whole truck looks right, in about the time it takes to grab a coffee in our waiting room.</p>
-<p><a class="btn" href="{BOOK}">Book Two Fronts – $100</a></p></div>{pic("install","Installer applying window film to the front driver window of a dark pickup truck")}</div></section>
+<ul class="chips"><li>LLumar film</li><li>Lifetime warranty</li><li>No deposit</li><li>Tue–Fri 10–6</li></ul></div></section>
+<section class="sec"><div class="wrap split"><div><p class="eyebrow">Two Fronts to Match</p><h2>Your rear glass is dark. Your fronts aren't.</h2>
+<p>Most pickups and SUVs leave the factory with dark rear privacy glass and clear front windows. We meter your back glass to see whether our 15% or 20% matches best, then tint your two fronts so the whole truck looks right. It's a quick job, so you can wait in our waiting room.</p>
+<p><a class="btn" href="{BOOK}">Book the Two Fronts Special – $100</a></p></div><div class="callout"><p class="eyebrow">Trucks &amp; SUVs</p><p class="amt">$100</p><h3>Two Fronts Special</h3><ul class="ticks"><li>We meter your back glass</li><li>15% or 20% to match</li><li>Wait in our waiting room</li><li>LLumar film, lifetime warranty</li></ul></div></div></section>
 {PRICING}
 <section class="sec alt"><div class="wrap"><p class="eyebrow">Why Tint Squad</p><h2>One shop. One film. 16 years.</h2><div class="cards why">
 <div class="card"><h3>16 years in Syracuse</h3><p>Same shop on West Genesee Street, standing behind every install.</p></div>
-<div class="card"><h3>Llumar ATC film</h3><p>Dyed automotive film in 5, 15, 20 and 35% shades.</p></div>
+<div class="card"><h3>LLumar film</h3><p>Dyed automotive film in 5, 15, 20 and 35% shades.</p></div>
 <div class="card"><h3>Lifetime warranty</h3><p>Covers manufacturer defects like bubbling, peeling, fading or color change.</p></div>
 <div class="card"><h3>Built for trucks &amp; SUVs</h3><p>Pickups, SUVs and two-front matches are what we do every day.</p></div></div>
 <h3 class="mt">Pick your shade</h3>{SHADES}</div></section>
@@ -84,22 +84,22 @@ home=f'''<section class="hero">{pic("hero","Black pickup truck with dark tinted 
 <section class="sec"><div class="wrap split rev">{pic("suv","Dark gray SUV with tinted windows parked on a snowy Syracuse street")}<div><p class="eyebrow">Tint in any season</p><h2>Syracuse glare doesn't wait for summer.</h2><p>Low winter sun off fresh snow is brutal. Tint cuts glare all year, and booking in the off-season beats the summer rush.</p><p><a class="btn ghost" href="/blog">Read the blog</a></p></div></div></section>
 <section class="sec alt"><div class="wrap narrow"><p class="eyebrow">FAQ</p><h2>Quick answers</h2>{faqhtml(FAQS[:5])}<p><a href="/faq">All FAQs →</a></p></div></section>
 {CONTACT}'''
-page('/','Truck & SUV Window Tint Syracuse NY | Tint Squad','Window tint for pickup trucks and SUVs in Syracuse, NY. Two front windows $100. Llumar ATC film, lifetime warranty, no deposit. Call (315) 418-5442.',home,FAQLD)
+page('/','Truck & SUV Window Tint Syracuse NY | Tint Squad','Window tint for pickup trucks and SUVs in Syracuse, NY. Two front windows $100. LLumar film, lifetime warranty, no deposit. Call (315) 418-5442.',home,FAQLD)
 
-wt=f'''<section class="phero"><div class="wrap"><p class="eyebrow">Automotive window tint · Syracuse, NY</p><h1>Window tint for pickups &amp; SUVs</h1><p class="lead">Llumar ATC film, computer-cut patterns and a lifetime warranty.</p><a class="btn lg" href="{BOOK}">Quote My Vehicle</a></div></section>
+wt=f'''<section class="phero"><div class="wrap"><p class="eyebrow">Automotive window tint · Syracuse, NY</p><h1>Window tint for pickups &amp; SUVs</h1><p class="lead">LLumar film, computer-cut patterns and a lifetime warranty.</p><a class="btn lg" href="{BOOK}">Quote My Vehicle</a></div></section>
 <section class="sec"><div class="wrap split"><div><h2>A factory-finished look</h2><p>We tint pickup trucks and SUVs every day, from a quick two-front match to the whole vehicle. Our installs go to the top of your windows, and every rear windshield is one full piece.</p>
 <h3>Computer-cut patterns</h3><p>Our cutting system uses a large pattern database covering virtually any vehicle, so film lines up precisely every time.</p>
-<h3>Lifetime warranty</h3><p>Llumar automotive film is covered for manufacturer defects such as bubbling, fading, peeling or color change.</p></div>{pic("install","Window film being installed on a pickup truck front window")}</div></section>
-<section class="sec alt"><div class="wrap"><h2>Shades we carry</h2><p>Llumar ATC (dyed) only, in four shades. Price is the same whichever you choose.</p>{SHADES}<p class="note">Check New York's tint rules before picking a shade for your front windows. See our <a href="/faq">FAQ</a>.</p>
+<h3>Lifetime warranty</h3><p>LLumar automotive film is covered for manufacturer defects such as bubbling, fading, peeling or color change.</p></div><div class="callout"><p class="eyebrow">Every install</p><ul class="ticks"><li>Computer-cut patterns</li><li>Film to the top of the window</li><li>One-piece rear windshield</li><li>Lifetime warranty</li></ul></div></div></section>
+<section class="sec alt"><div class="wrap"><h2>Shades we carry</h2><p>LLumar dyed film only, in four shades. Price is the same whichever you choose.</p>{SHADES}<p class="note">Check New York's tint rules before picking a shade for your front windows. See our <a href="/faq">FAQ</a>.</p>
 <h3 class="mt">Add-ons</h3><ul class="ticks"><li>Windshield sun strip ($50)</li><li>Full windshield ($150)</li><li>Sunroof (quoted by vehicle)</li></ul></div></section>
 {PRICING}{HOW}'''
-page('/window-tint','Truck & SUV Window Tinting Syracuse NY | Tint Squad','Professional window tint for pickups and SUVs in Syracuse, NY. Llumar ATC film in 5/15/20/35%, computer-cut patterns, lifetime warranty.',wt)
+page('/window-tint','Truck & SUV Window Tinting Syracuse NY | Tint Squad','Professional window tint for pickups and SUVs in Syracuse, NY. LLumar film in 5/15/20/35%, computer-cut patterns, lifetime warranty.',wt)
 
 q=f'''<section class="phero"><div class="wrap"><p class="eyebrow">Pricing &amp; quotes</p><h1>Get your price in a minute</h1><p class="lead">Flat prices for the common jobs. Everything else is quoted by vehicle on our booking page.</p><a class="btn lg" href="{BOOK}">Start My Quote</a></div></section>{PRICING}{HOW}'''
 page('/quote','Window Tint Prices & Quote Syracuse NY | Tint Squad','Window tint prices in Syracuse, NY: two front windows $100, windshield strip $50, full windshield $150. Get a quote by vehicle. No deposit.',q)
 
 f=f'''<section class="phero"><div class="wrap"><p class="eyebrow">FAQ</p><h1>Window tint questions, answered</h1></div></section><section class="sec"><div class="wrap narrow">{faqhtml(FAQS)}<p class="mt">Still have a question? <a href="{TEL}">Call {PH}</a>.</p></div></section>'''
-page('/faq','Window Tint FAQ Syracuse NY | Tint Squad','Answers about window tint in Syracuse, NY: New York tint law basics, Llumar ATC film, timing, pricing, warranty and aftercare.',f,FAQLD)
+page('/faq','Window Tint FAQ Syracuse NY | Tint Squad','Answers about window tint in Syracuse, NY: New York tint law basics, LLumar film, timing, pricing, warranty and aftercare.',f,FAQLD)
 
 posts=[("The \"Factory Match\"","Why your truck looks unfinished without it: dark factory rear glass, clear fronts, and the $100 fix.","the-factory-match"),
 ("Why Tinting in Syracuse Winters is Smarter","Snow glare on 690 and I-81 is real, and winter is the best time to beat the summer rush.","why-tinting-in-syracuse-winters-is-smarter"),
@@ -111,7 +111,7 @@ page('/blog','Window Tint Blog | Tint Squad Syracuse NY','Honest window tint adv
 c=f'<section class="phero"><div class="wrap"><p class="eyebrow">Contact</p><h1>Call, book, or stop by</h1></div></section>{CONTACT}'
 page('/blank','Contact Tint Squad | Window Tint Syracuse NY','Contact Tint Squad, 1130 West Genesee Street, Syracuse, NY 13204. Call (315) 418-5442. Open Tuesday to Friday, 10am to 6pm.',c)
 bk=f'<section class="phero"><div class="wrap"><p class="eyebrow">Book online</p><h1>Book your tint appointment</h1><p class="lead">Pick your vehicle and service, see your price, choose a time. No deposit.</p><a class="btn lg" href="{BOOK}">Open Booking Page</a> <a class="btn ghost lg" href="{TEL}">Call {PH}</a></div></section>{HOW}'
-page('/blank-1','Book a Window Tint Appointment Syracuse NY | Tint Squad','Book your truck or SUV window tint appointment at Tint Squad in Syracuse, NY. Llumar film with a lifetime warranty. No deposit.',bk)
+page('/blank-1','Book a Window Tint Appointment Syracuse NY | Tint Squad','Book your truck or SUV window tint appointment at Tint Squad in Syracuse, NY. LLumar film with a lifetime warranty. No deposit.',bk)
 page('/404','Page Not Found | Tint Squad','Page not found.',f'<section class="phero"><div class="wrap"><h1>Page not found</h1><p><a class="btn" href="/">Go home</a></p></div></section>')
 os.rename(OUT+'/404/index.html',OUT+'/404.html'); os.rmdir(OUT+'/404')
 paths=['/','/window-tint','/quote','/faq','/blog','/blank','/blank-1']
